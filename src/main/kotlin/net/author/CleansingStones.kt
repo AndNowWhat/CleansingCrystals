@@ -61,6 +61,6 @@ class CleansingStones(
             sceneObject.interact("Cleanse")
             Execution.delayUntil(5000, { player.animationId != -1 })
         }
-        return random.nextLong(1000,3000)
+        return random.nextLong(2000,3000)
     }
 }
