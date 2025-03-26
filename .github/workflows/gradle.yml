@@ -30,8 +30,8 @@ jobs:
     - name: Upload JAR as Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: CleansingCrystals
-        path: build/libs/CleansingCrystals.jar
+        name: CleansingStones
+        path: build/libs/CleansingStones.jar
 
     - name: Delete existing GitHub release and tag
       env:
@@ -70,6 +70,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: build/libs/CleansingCrystals.jar
-        asset_name: CleansingCrystals.jar
+        asset_path: build/libs/CleansingStones.jar
+        asset_name: CleansingStones.jar
         asset_content_type: application/java-archive
