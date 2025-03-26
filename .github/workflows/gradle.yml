@@ -30,7 +30,7 @@ jobs:
     - name: Upload JAR as Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: Telos-JAR
+        name: CleansingCrystals
         path: build/libs/CleansingCrystals.jar
 
     - name: Delete existing GitHub release and tag
