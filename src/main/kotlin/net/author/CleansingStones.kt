@@ -39,6 +39,11 @@ class CleansingStones(
             Execution.delay(random.nextLong(2500,5500))
             return
         }
+
+        if(!Backpack.contains("Cleansing crystal")){
+            botState = BotState.IDLE
+            return
+        }
         when (botState) {
             BotState.SKILLING -> {
                 Execution.delay(handleSkilling(player))
